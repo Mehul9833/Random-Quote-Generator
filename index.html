@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/471e36924f.js" crossorigin="anonymous"></script>
+  <title>Random Quote Generator</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-title">
+      <h1>Random Quotes Generator</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container" id="change-background">
+      <div class="inner-container" id="change-color-background">
+        <div class="select-day">
+          <input type="radio" id="morning" name="timimg" value="Morning" checked>
+          <label for="morning">Morning</label>
+          <input type="radio" id="evening" name="timimg" value="Evening">
+          <label for="evening">Evening</label>
+          <input type="radio" id="night" name="timimg" value="Night">
+          <label for="night">Night</label>
+        </div>
+        <div class="inner-container-title">
+          <p id="title">Lets Make Your <span id="timing">Morning</span> Better With This Quote</p>
+        </div>
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p id="new-quote">Write it on your heart that every day is the best day in the year.</p>
+          <i class="fas fa-quote-right"></i>
+          <div class="quote-writter-div">
+            <p>- <span id="quote-writter">Ralph Waldo Emerson</span></p>
+          </div>
+
+        </div>
+        <div class="change-quote-button">
+          <button onclick="generateQuote()">Click me</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
